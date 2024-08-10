@@ -1,0 +1,10 @@
+
+public class ForEachLoopExample {
+    public static void main(String[] args) {
+        String[] colors = {"Red", "Green", "Blue", "Yellow", "Orange"};
+
+        for (String color : colors) {
+            System.out.println(color);
+        }
+    }
+}
