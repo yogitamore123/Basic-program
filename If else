@@ -1,0 +1,31 @@
+ class BasicJavaProgram {
+    public static void main(String[] args) {
+        
+        int x = 10;
+        double y = 20.5;
+        String name = "John Doe";
+
+        
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
+        System.out.println("Name: " + name);
+
+        
+        int sum = x + 5;
+        double product = y * 2;
+        System.out.println("Sum: " + sum);
+        System.out.println("Product: " + product);
+
+        // Conditional statement
+        if (x > 5) {
+            System.out.println("x is greater than 5");
+        } else {
+            System.out.println("x is less than or equal to 5");
+        }
+
+        // Looping statement
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Iteration " + (i + 1));
+        }
+    }
+}
