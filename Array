@@ -1,0 +1,11 @@
+class ColorArray {
+    public static void main(String[] args) {
+      String[] colors = {"Red", "Green", "Blue", "Yellow", "Purple"};
+
+        // Print the colors
+        System.out.println("Colors:");
+        for (String color : colors) {
+            System.out.println(color);
+        }
+    }
+}
