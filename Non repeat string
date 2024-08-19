@@ -1,0 +1,21 @@
+
+class nonrepeatstring {
+    public static void main(String[] args) {
+        String str = "aabbcdd";
+        char nonRepeatChar = findNonRepeatChar(str);
+        System.out.println("First non-repeating character: " + nonRepeatChar);
+    }
+
+    public static char findNonRepeatChar(String str) {
+        int[] charCount = new int[256]; // assuming ASCII characters
+        for (char c : str.toCharArray()) {
+            charCount[c]++;
+        }
+        for (char c : str.toCharArray()) {
+            if (charCount[c] == 1) {
+                return c;
+            }
+        }
+        return '\0'; 
+    }
+} 
