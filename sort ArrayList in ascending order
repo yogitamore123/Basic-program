@@ -1,0 +1,14 @@
+ import java.util.*; 
+public class ascending { 
+	public static void main(String args[]) 
+	{ ArrayList<String> list = new ArrayList<String>(); 
+   list.add("rita"); 
+		list.add("sita"); 
+		list.add("gita"); 
+		list.add("nita"); 
+		list.add("lisha"); 
+   System.out.println("Unsorted ArrayList: "+ list); 
+   Collections.sort(list); 
+System.out.println("Sorted ArrayList "+ "in Ascending order : "+ list); 
+	} 
+} 
