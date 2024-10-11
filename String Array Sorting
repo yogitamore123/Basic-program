@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+        String[] arr = {"dog", "cat", "apple", "banana"};
+
+        // Selection Sort
+        for (int i = 0; i < arr.length - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j].compareTo(arr[minIndex]) < 0) {
+                    minIndex = j;
+                }
+            }
+            // Swap elements
+            String temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
+
+        System.out.println("Sorted Array:");
+        for (String s : arr) {
+            System.out.println(s);
+        }
+    }
+}
